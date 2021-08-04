@@ -6,6 +6,7 @@ pipeline {
                 git credentialsId: 'Github', url: 'https://github.com/malli407/Calculator'
                 echo "This is Mallikarjuna Reddy"
                 }
+                }
         stage("maven build"){
             steps{
                 sh "maven clean package"
@@ -14,6 +15,6 @@ pipeline {
                 
                
             
-        }
+        
     }
 }
