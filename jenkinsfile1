@@ -5,6 +5,7 @@ pipeline {
         stage("git checkout") {
             steps {
                 git credentialsId: 'Github', url: 'https://github.com/malli407/Calculator'
+                echo "This is Mallikarjuna Reddy"
             }
         }
     }
